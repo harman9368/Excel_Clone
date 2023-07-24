@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone </title>
+    <link rel="stylesheet" href="style111.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="menu-container">
+        <!-- <div class="yo" contenteditable="true">
+            untitled spreadsheet
+        </div> -->
+        <img class="excel-image" src="https://img.icons8.com/color/48/000000/google-sheets.png">
+        <!-- <i class="fa-solid fa-file-spreadsheet"></i> -->
+
+        <select class="font-size">
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14" selected>14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="22">22</option>
+        </select>
+        <select class="font-family">
+            <option value="monospace">monospace</option>
+            <option value="fantasy" selected>fantasy</option>
+            <option value="cursive">cursive</option>
+            <option value="sans-serif">sans-serif</option>
+        </select>
+        <div class="bui-container">
+            <!-- <input type="button" class="bold" value="B"> -->
+            <span class="material-icons-outlined material-icons  bold" value="B">
+                format_bold
+                </span>
+            <!-- <input type="button" class="underline" value="U"> -->
+            <span class="material-icons-outlined material-icons underline" value="U">
+                format_underlined
+                </span>
+            <!-- <input type="button" class="italic" value="I"> -->
+            <span class="material-icons-two-tone material-icons italic" value="I">
+                format_italic
+                </span>
+        </div>
+        <div class="align-container">
+            <!-- <input type="button" class="left" value="L"> -->
+            <!-- <button type="button" class="left" >Left</button> -->
+            <span class="material-icons-outlined material-icons left">
+                format_align_left
+                </span>
+            <!-- <input type="button" class="center" value="C"> -->
+            <!-- <button type="button" class="center">Center</button> -->
+            <span class="material-icons-outlined material-icons center">
+                format_align_center
+                </span>
+            
+            <!-- <input type="button" class="right" value="R"> -->
+            <!-- <button type="button" class="right">Right</button> -->
+            <span class="material-icons-outlined material-icons right">
+                format_align_right
+                </span>
+        </div>
+        <div class="color-container">
+            <input type="color" class="color" style="visibility: hidden;" >
+            <span class="material-icons-outlined material-icons color">format_color_text</span>
+            <input type="color" class="bg-color" style="visibility: hidden;">
+            <span class="material-icons-outlined material-icons bg-color">format_color_fill </span>
+        </div>
+        <div class="nos-container">
+            <span class="material-icons-outlined material-icons new">
+                add_circle
+            </span>
+            
+            <span class="material-icons-outlined material-icons open">
+                folder_open
+            </span>
+              <!-- <input type="file" class="open" >   -->
+            <span class="material-icons-outlined material-icons save">
+                file_download
+            </span>
+        </div>
+
+
+
+    </div>
+    <div class="formula-container">
+
+        <input type="text" class="address-input" readonly>
+        <p> fx </p>
+        <input type="text" class="formula-input">
+
+    </div>
+    <div class="grid-container">
+        <div class="left_box box">
+
+        </div>
+        <div class="top_row">
+
+        </div>
+        <div class="left_col">
+
+        </div>
+        <div class="grid">
+
+        </div>
+
+    </div>
+    <div class="sheets-container">
+        <span class="material-icons-outlined material-icons add-sheet_btn_container">
+            add
+            </span>
+        <!-- <div class="add-sheet_btn_container">
+            add
+        </div> -->
+        <div class="sheet-list">
+            <div class="sheet active" idc="0">Sheet 1</div>
+        </div>
+    </div>
+    <script src="grid.js"></script>
+    <script src="sheet.js"></script>
+    <script src="newopensave.js"></script>
+    <script src="formula.js"></script>
+</body>
+
+</html>
